@@ -1,7 +1,7 @@
-import java.util.ArrayList;
+import java.util.*;
 
-public class Main {
-    public static void main(String[] args) {
+class test {
+    public int solution(int n) {
         ArrayList<Long> dp = new ArrayList<>();
         dp.add(0L);
         dp.add(1L);
@@ -12,6 +12,6 @@ public class Main {
             dp.add(next);
         }
         long answer = dp.get(n) % 1000000007L;
-        System.out.println((int) answer);
+        return (int) answer;
     }
 }
